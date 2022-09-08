@@ -5,10 +5,7 @@ const Header = () => {
     <C.Header>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Sobre</li>
-          <li>Projetos</li>
-          <li>Contato</li>
+          <li>Gallery Photos</li>
         </ul>
       </nav>
     </C.Header>
