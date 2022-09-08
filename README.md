@@ -1,7 +1,29 @@
 # Pacotes
 npx create-react-app namePasta --template typescript
 npm install styled-components
-npm install -D @type/styled-components
+npm install -D @types/styled-components
+npm install uuid   => gera um hash para cada foto
+npm install -D @types/uuid => types do uuid
+npm install firebase
+
+# Firebase
+-- produtos ( gratuitos, acima de X dados cobra )
+- banco de dados, storage( guarda arquivos), notificações e outros. 
+
+
+
+## Firebase Outhers
+
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}
+
+
 # Getting Started with Create React App
 
 # Getting Started with Create React App
