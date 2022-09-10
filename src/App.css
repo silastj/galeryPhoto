@@ -13,6 +13,28 @@
   margin: 0;
 }
 
+.centralEmoji{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.emoji{
+  font-size: 45px;
+}
+
+.list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.cards{
+  width: 100%;
+  max-width: 200px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
