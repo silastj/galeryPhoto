@@ -30,6 +30,33 @@
   gap: 10px;
 }
 
+form{
+  background-color:#3d3f43;
+  padding: 20px;
+  border-radius: 10px;
+  color:#fff;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+form>input{
+  cursor: pointer;
+}
+
+.enviar{
+  border:none;
+  padding: 5px 25px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color:palevioletred;
+  box-shadow: 0px 1px 10px 2px #000;
+  margin: 0 10px;
+}
+
+form>p{
+  margin: 0;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

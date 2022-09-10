@@ -7,7 +7,7 @@ type Props = {
 const Home = ({children}: Props) => {
   return (
     <C.Container>
-      <p>Os itens abaixo está sendo consumindo do FIREBASE.</p>
+      <p>Os itens abaixo estão sendo consumindos do FIREBASE.</p>
       {children}
     </C.Container>
   )

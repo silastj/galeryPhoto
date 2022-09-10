@@ -1,11 +1,7 @@
 import * as C from './styles'
+import { Photo } from '../../types/Photo'
 
-type Props = {
-  url: string;
-  name: string;
-}
-
-const PhotoItem = ({url, name}: Props) => {
+const PhotoItem = ({url, name}: Photo) => {
   return (
     <>
       {url.indexOf('.mp4') === -1 &&
