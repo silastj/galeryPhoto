@@ -1,10 +1,14 @@
-import { getEffectiveConstraintOfTypeParameter } from 'typescript'
 import * as C from './styles'
 
-const Home = () => {
+type Props = {
+  children: React.ReactNode
+}
+
+const Home = ({children}: Props) => {
   return (
     <C.Container>
-      <p>Corpo</p>
+      <p>Os itens abaixo está sendo consumindo do FIREBASE.</p>
+      {children}
     </C.Container>
   )
 }

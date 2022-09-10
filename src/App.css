@@ -25,15 +25,11 @@
 }
 
 .list{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
-.cards{
-  width: 100%;
-  max-width: 200px;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

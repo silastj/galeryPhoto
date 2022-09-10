@@ -7,10 +7,14 @@ type Props = {
 
 const PhotoItem = ({url, name}: Props) => {
   return (
-    <C.PhotoItem>
-      <img src={url} alt={name} />
-      <p>{name}</p>
-    </C.PhotoItem>
+    <>
+      {url.indexOf('.mp4') === -1 &&
+        <C.PhotoItem>
+          <img src={url} alt={name} />
+          <p>{name}</p>      
+        </C.PhotoItem>
+      }
+    </>
   )
 }
 
