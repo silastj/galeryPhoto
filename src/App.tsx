@@ -45,8 +45,18 @@ function App() {
     }
   }
 
-  const handleDelete = () => {
-    
+  console.log(photos)
+  const handleClose = (id: any) => {
+    setLoading(true);
+      Photos.deletePhoto(id)
+    setLoading(false);
+    console.log('name ', id)
+
+    const UpdateList = photos.filter((CurrentItem) => {
+      if (CurrentItem.id !== id)
+        return id;
+    })
+    setPhotos(UpdateList);
   }
 
   return (
@@ -59,7 +69,6 @@ function App() {
         {uploading && (
           <p>Carregando...</p>
         )}
-        <button onClick={handleDelete}>Deletar</button>
       </form>
 
         {!loading && photos.length === 0 && (
@@ -78,7 +87,14 @@ function App() {
         {!loading && photos.length > 0 && (
           <div className="list">
             {photos.map((item, index) => (
-              <PhotoItem key={index} url={item.url} name={item.name} />
+              <>
+                <PhotoItem 
+                  key={index} 
+                  url={item.url} 
+                  name={item.name} 
+                />
+                <button onClick={() => handleClose(item.id)}>X</button>
+              </>
             ))}
           </div>
         )}
